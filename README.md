@@ -1,4 +1,4 @@
-# Lab04 - Dynamic Linked List
+# Dynamic Linked List
 
 We have been learning about run time memory allocation, including how to allocate memory for structures, and keep track of that memory using a pointer to a structure. One aspect we haven't talked about are *self-referential* structures... structures which contain, as a field, a reference to another structure of the same type. It turns out that self-referential structures are extremely useful in order to make various different data structures. Today we will use a self-referential structure to make a simple data structure called a *linked list*.
 
@@ -139,19 +139,3 @@ valgrind --leak-check=full usell 56 42 29 51 29 42 3
 ```
 
 Look at the results of valgrind, and if there are any problems, you should fix these problems.
-
-## Submitting your Lab
-
-When you are finished debugging your code, make sure to commit and push your repository using git. Cut and paste the resulting hashCode into the Lab 04 submission area in the Lab Submissions folder under Content for CS-220 in myCourses. You may submit as many times as you wish up to the deadline of midnight tonight (Feb. 19), only the last submission will be graded.
-
-## Grading your Submission
-
-If you turn in your code late, 4 points will be deducted, unless you have received an extension from the professor. Any submissions after Thursday will receive a zero grade.
-
-Missing or lack of attempt to solve the problem will result in a zero grade.
-
-If your code does not compile, or has an obvious bug, you will get a 3 point deduction for each bug. Bugs include things like lists ending up in the wrong order, or lots of extra debug prints occuring in your output. 
-
-We will run `./usell` with some unpublished command line parameters in your repository, and two points will be deducted for each incorrect response.
-
-We will also run valgrind on your code, and deduct three points if valgrind reports any errors.
